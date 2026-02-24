@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'JDK17'
+    }
+
     triggers {
         cron('H/5 * * * 1')
     }
